@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 import 'package:ny_news/core/utils/enums.dart';
-import 'package:ny_news/data/models/news_model.dart';
+import 'package:ny_news/data/models/article_model.dart';
 
 class NewsState extends Equatable {
-  final List<Result> newsModel;
+  final List<ArticleModel> newsModel;
   final RequestStatus status;
   final String message;
 
@@ -14,7 +14,7 @@ class NewsState extends Equatable {
   });
 
   NewsState copyWith({
-    List<Result>? newsModel,
+    List<ArticleModel>? newsModel,
     RequestStatus? status,
     String? message,
   }) {
