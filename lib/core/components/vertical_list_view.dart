@@ -23,24 +23,24 @@ class _VerticalListViewState extends State<VerticalListView> {
   @override
   void initState() {
     super.initState();
-    _scrollController.addListener(_onScroll);
+    //_scrollController.addListener(_onScroll);
   }
 
   @override
   void dispose() {
-    _scrollController
-      ..removeListener(_onScroll)
-      ..dispose();
+    // _scrollController
+    //   ..removeListener(_onScroll)
+    //   ..dispose();
     super.dispose();
   }
 
-  void _onScroll() {
-    if (_scrollController.position.atEdge) {
-      if (_scrollController.position.pixels != 0) {
-        widget.addEvent();
-      }
-    }
-  }
+  // void _onScroll() {
+  //   if (_scrollController.position.atEdge) {
+  //     if (_scrollController.position.pixels != 0) {
+  //       widget.addEvent();
+  //     }
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {

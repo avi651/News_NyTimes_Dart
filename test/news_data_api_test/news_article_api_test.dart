@@ -37,7 +37,7 @@ void main() {
         // Actual result
         return Response(requestOptions: requestOptions, statusCode: 400);
       });
-      var result;
+      Object result;
       try {
         result = await articlesApi.getNewsDataArticle();
       } catch (e) {
@@ -58,7 +58,7 @@ void main() {
       });
 
       print("The actual data is ->$actualArticlesListJson");
-      var result;
+      Object result;
       try {
         // Compare actual result with expected result
         result = await articlesApi.getNewsDataArticle();
