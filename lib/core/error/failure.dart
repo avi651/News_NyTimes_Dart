@@ -15,3 +15,13 @@ class ServerFailure extends Failure {
 class DatabaseFailure extends Failure {
   const DatabaseFailure(super.message);
 }
+
+/// Cancel token failure
+class CancelTokenFailure extends Failure {
+  final int? statusCode;
+
+  const CancelTokenFailure(String errorMessage, this.statusCode)
+      : super(
+          errorMessage,
+        );
+}

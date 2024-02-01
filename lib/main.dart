@@ -4,6 +4,7 @@ import 'package:ny_news/core/resources/app_router.dart';
 import 'package:ny_news/core/resources/app_strings.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   DependencyInjection.init();
   runApp(const MyApp());
 }

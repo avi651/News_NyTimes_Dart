@@ -52,6 +52,8 @@ dependencies:
   mockito: ^5.4.3
   build_runner:
   http: ^1.1.2
+  json_annotation:
+  json_serializable:
 
 dev_dependencies:
   flutter_test:
